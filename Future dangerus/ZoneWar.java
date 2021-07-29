@@ -24,7 +24,6 @@ public class ZoneWar extends World
     public void prepare()
     {
         addObject(cont, 200,100);
-        //removeObject(counter);
         People people = new People();
         addObject(people,286,273);
         People people2 = new People();
@@ -42,7 +41,8 @@ public class ZoneWar extends World
         Robot2 robot23 = new Robot2();
         addObject(robot23,210,84);
         Counter counter=getCounter();
-        removeObject(counter);
+        counter.setLocation(28,43);
+        counter.setLocation(551,30);
     }
 }
 

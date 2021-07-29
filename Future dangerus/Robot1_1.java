@@ -12,6 +12,7 @@ public class Robot1_1 extends Robot1
      * Act - do whatever the Robot1_1 wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
+    public int pause = 2;
     public void act()
     {
         click();
@@ -20,20 +21,15 @@ public class Robot1_1 extends Robot1
     {
         if (Greenfoot.mouseClicked(this)){
             setImage("yellow-draught.png");
-            pausayborron();
+            contador();
             
-            }
-    }
-    public void pausayborron()
-    {
-        if (pause>0)
-        {
-            pause--;
         }
-        if (pause == 0)
-        {
-            World mundo = getWorld();
-            mundo.removeObject(this);
+    }
+    public void contador(){
+        if (Greenfoot.mouseClicked(this)){
+            ZoneWar mundo = (ZoneWar) getWorld();
+            Counter cont = mundo.getCounter();
+            cont.restCount();
         }
     }
 }

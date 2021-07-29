@@ -8,7 +8,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class Counter extends Actor
 {
-    int contar = 0;
+    int contar = 5;
     /**
      * Act - do whatever the Vidas wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
@@ -16,16 +16,22 @@ public class Counter extends Actor
     public void act()
     
     {
-        setImage(new GreenfootImage ("0",20,Color.WHITE,Color.BLACK));
+        setImage(new GreenfootImage (""+contar,20,Color.WHITE,Color.BLACK));
     }
     public void addCount ()
     {
         contar++;
+        setImage(new GreenfootImage(""+contar,20,Color.WHITE,Color.BLACK));
         
     }
     public void restCount ()
     {
         contar--;
+        setImage(new GreenfootImage(""+contar,20,Color.WHITE,Color.BLACK));
+    }
+    public void rest2 (){
+        contar = contar - 2;
+        setImage(new GreenfootImage(""+contar,20,Color.WHITE,Color.BLACK));
     }
     
 }
