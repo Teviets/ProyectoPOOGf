@@ -37,6 +37,9 @@ public class Counter extends Actor
     public void lose (){
         if (contar<=0){
             setImage("Game_over.png");
+            World mundito = getWorld();
+            Corazon cora = new Corazon();
+            mundito.removeObject(cora);
             Greenfoot.stop();
         }
     }

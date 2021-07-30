@@ -16,12 +16,13 @@ public class ZoneWar extends World
     {
         super(600, 400, 1);
         prepare();
-        //Greenfoot.playSound("Future_dangerus.wav");
+        Greenfoot.playSound("Future_dangerus.wav");
     }
     public Counter getCounter()
     {
         return cont;
     }
+    
     public void prepare()
     {
         addObject(cont, 200,100);
@@ -44,6 +45,8 @@ public class ZoneWar extends World
         Counter counter=getCounter();
         counter.setLocation(28,43);
         counter.setLocation(551,30);
+        Corazon corazon = new Corazon();
+        addObject(corazon,483,34);
     }
 }
 

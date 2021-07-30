@@ -13,6 +13,7 @@ public class People extends Actor
     {
         if (pause>0)
         {
+            
             pause--;
         }
         if (pause == 0)
