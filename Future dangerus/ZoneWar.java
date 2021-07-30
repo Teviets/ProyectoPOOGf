@@ -11,16 +11,17 @@ public class ZoneWar extends World
     /**
      * Constructor for objects of class MyWorld.
      */
+    
     public ZoneWar()
     {
         super(600, 400, 1);
         prepare();
+        //Greenfoot.playSound("Future_dangerus.wav");
     }
     public Counter getCounter()
     {
         return cont;
     }
-    
     public void prepare()
     {
         addObject(cont, 200,100);

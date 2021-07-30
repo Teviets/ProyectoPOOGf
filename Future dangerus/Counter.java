@@ -17,6 +17,7 @@ public class Counter extends Actor
     
     {
         setImage(new GreenfootImage (""+contar,20,Color.WHITE,Color.BLACK));
+        lose();
     }
     public void addCount ()
     {
@@ -33,5 +34,10 @@ public class Counter extends Actor
         contar = contar - 2;
         setImage(new GreenfootImage(""+contar,20,Color.WHITE,Color.BLACK));
     }
-    
+    public void lose (){
+        if (contar<=0){
+            setImage("Game_over.png");
+            Greenfoot.stop();
+        }
+    }
 }

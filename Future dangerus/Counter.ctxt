@@ -10,4 +10,6 @@ comment3.params=
 comment3.target=void\ restCount()
 comment4.params=
 comment4.target=void\ rest2()
-numComments=5
+comment5.params=
+comment5.target=void\ lose()
+numComments=6
